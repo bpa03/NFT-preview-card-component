@@ -1,0 +1,105 @@
+.card
+  flex-basis: 83.333%
+  background: $card-bg
+  border-radius: $border-radius-value
+  max-width: 350px
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, .4)
+  padding: 1.4rem
+
+.card__header
+  position: relative
+  overflow: hidden
+  cursor: pointer
+  &:hover .card__image-overlay
+    transform: scale(1)
+
+.card__image
+  max-width: 100%
+  width: 100%
+  border-radius: $border-radius-value
+  vertical-align: top
+
+.card__image-overlay
+  position: absolute
+  background-color: rgba(0, 255, 247, .5)
+  border-radius: $border-radius-value
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  top: 0
+  bottom: 0
+  transform: scale(0)
+  transition-delay: 2s
+  transition: transform .3s
+
+.card__image-overlay-icon
+  color: $white
+
+.card__title
+  margin: 1.1rem 0
+  font-size: 1.2rem
+  color: $white
+  cursor: pointer
+  transition: color .3s
+
+  &:hover
+    color: $secondary-color
+
+.card__description
+  color: $primary-color
+  font-weight: 300
+  font-size: .8889rem
+  line-height: 1.35rem
+
+.card__cripto-history-price, .card__cripto-history-time
+  display: flex
+  align-items: center
+  gap: .4rem
+
+.card__cripto-history
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  margin-top: 1rem
+
+.card__cripto-history-price span
+  color: $secondary-color
+  font-size: .8889rem
+  font-weight: bold
+
+.card__cripto-history-time span
+  color: $primary-color
+  font-size: .8889rem
+
+.card__separator
+  width: 100%
+  margin: 1rem 0
+  height: 1px
+  display: block
+  background-color: $line-color
+
+.card__footer
+  display: flex
+  align-items: center
+  gap: 1rem
+
+.card__avatar
+  width: 34px
+  height: 34px
+  border: 1px solid $white
+  border-radius: 50%
+  vertical-align: top
+
+.card__user-mention
+  font-size: .86667rem
+  color: $primary-color
+
+.card__user-name
+  color: $white
+  transition: color .3s
+  cursor: pointer
+
+  &:hover
+    color: $secondary-color
