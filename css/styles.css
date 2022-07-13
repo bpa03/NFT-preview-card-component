@@ -1,3 +1,155 @@
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  background-color: hsl(217deg, 54%, 11%);
+}
+
+.page__card-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-family: "Outfit", sans-serif;
+}
+
+.card {
+  flex-basis: 83.333%;
+  background: hsl(216deg, 50%, 16%);
+  border-radius: 6px;
+  max-width: 350px;
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.4);
+  padding: 1.4rem;
+}
+
+.card__header {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card__header:hover .card__image-overlay {
+  transform: scale(1);
+}
+
+.card__image {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 6px;
+  vertical-align: top;
+}
+
+.card__image-overlay {
+  position: absolute;
+  background-color: rgba(0, 255, 247, 0.5);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  transform: scale(0);
+  transition-delay: 2s;
+  transition: transform 0.3s;
+}
+
+.card__image-overlay-icon {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.card__title {
+  margin: 1.1rem 0;
+  font-size: 1.2rem;
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.card__title:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+
+.card__description {
+  color: hsl(215deg, 51%, 70%);
+  font-weight: 300;
+  font-size: 0.8889rem;
+  line-height: 1.35rem;
+}
+
+.card__cripto-history-price, .card__cripto-history-time {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.card__cripto-history {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.card__cripto-history-price span {
+  color: hsl(178deg, 100%, 50%);
+  font-size: 0.8889rem;
+  font-weight: bold;
+}
+
+.card__cripto-history-time span {
+  color: hsl(215deg, 51%, 70%);
+  font-size: 0.8889rem;
+}
+
+.card__separator {
+  width: 100%;
+  margin: 1rem 0;
+  height: 1px;
+  display: block;
+  background-color: hsl(215deg, 32%, 27%);
+}
+
+.card__footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card__avatar {
+  width: 34px;
+  height: 34px;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+  vertical-align: top;
+}
+
+.card__user-mention {
+  font-size: 0.86667rem;
+  color: hsl(215deg, 51%, 70%);
+}
+
+.card__user-name {
+  color: hsl(0deg, 0%, 100%);
+  transition: color 0.3s;
+  cursor: pointer;
+}
+.card__user-name:hover {
+  color: hsl(178deg, 100%, 50%);
+}
 
 /*# sourceMappingURL=styles.css.map */
